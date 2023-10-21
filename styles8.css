@@ -1,0 +1,694 @@
+/* Reset some default styles and apply basic styling */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(192, 192, 243);
+}
+/* styles.css */
+h1 {
+    transition: color 0.5s; /* Smooth transition for the color change */
+}
+
+h1:hover {
+    color: rgb(14, 17, 215); /* Change to the desired color on hover */
+}
+
+
+header {
+    text-align: center;
+    background-color:rgb(201, 201, 240);
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    background-color:rgb(181, 181, 249);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li:hover{
+    color:rgb(240, 68, 240)
+
+}
+
+section {
+    padding: 40px;
+    
+    background-color: #fff;
+    border: 1px solid #ccc;
+    
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+h2:hover{
+    background-color: linear-gradient(45deg,rgb(41, 179, 225),blue);;
+    color: orange;
+}
+nav a[href$="/Resume24 2424.pdf"] {
+    color: #007acc; /* Change the font color to blue */
+    text-decoration: underline; /* Underline the link */
+}
+/*  About  */
+.about {
+    background: radial-gradient(#e1efff, white);
+  }
+  
+
+/* Style the About Me section */
+#about {
+    padding: 40px;
+    display: flex; /* Create a flex container */
+    align-items:left; /* Vertically center the content */
+    background:radial-gradient(#e1efff,white);
+}
+.about.title::after{
+    content:"—About Me—";
+    content:"JIDIPAALLY MANASWI";
+    text-overflow:ellipsis;
+    display:-webkit-inline-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+
+
+}
+.about.about-content.column left{
+    width:45%;
+}
+.about.about-content.column left img{
+    height:100px;
+    width:100px;
+    object-fit:cover;
+    border-radius:6px;
+}
+.about.about-content.row right{
+    width:40%;
+    text-align:left;
+    display:flex;
+
+
+}
+.about.about-content.row right.text{
+    font-size:25px;
+    font-weight:100;
+    margin-bottom:10px;
+    text-align:left;
+    text-align:justify;
+    align-items: right;
+    display:flex;
+}
+/* Linear Gradiant */
+.about .about-content .row right .text span {
+    /* color: #1e3551; */
+    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: right;
+    display:flex;
+  }
+  
+  .about .about-content .row right p {
+    text-align: right;
+    display:flex;
+  }
+  
+  .about .about-content .row right a {
+    display: inline-block;
+    background: #1e3551;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #1e3551;
+    transition: all 0.3s ease;
+  }
+  
+  .about .about-content .row right a:hover {
+    color: #1e3551;
+    background: none;
+    animation: pulsate 1s ease-in-out;
+  }
+  
+  
+
+
+.about-header {
+    flex: 1; /* Takes one-third of the available space */
+    text-align: left; /* Center the text horizontally */
+    align-items:left;
+}
+
+#about h2 {
+    font-size: 24px;
+    margin-right: 20px;
+
+}
+.about-header h2 {
+    font-size: 24px;
+}
+
+
+.about-content {
+    flex: 1; /* Grow to fill available space */
+    padding: 0 40px; 
+    align-items:left;
+    text-align: left;
+}
+
+
+
+.about-content p {
+    font-size: 16px;
+    align-items:left;
+    text-align: left;
+    border-bottom-left-radius: 60%;
+    font-display: left;
+    justify-content: left;
+}
+/* Style the About Me section */
+#about {
+    padding: 40px;
+    text-align: center; /* Center the content horizontally */
+}
+
+#about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#about p:last-child {
+    margin-bottom: 0; /* Remove margin from the last paragraph (name) */
+}
+.image-container {
+    display:flex; /* Takes two-thirds of the available space */
+    text-align: center; /* Adjust the image alignment as needed (e.g., left, right, or center) */
+    margin: 20px;
+    justify-content: center; /* Add margins to create depth */
+}
+   
+    
+
+.image-container img {
+    max-width: 100%; /* Adjust the image size as needed */
+    display:flex;
+    justify-content: center; /* Ensure the image doesn't affect the container shape */
+}
+
+/* Style the image container */
+
+    
+
+/* Style the image container */
+.image {
+    max-width: 10px; /* Adjust the container size as needed */
+    border-radius: 10%; /* Create an oval shape */
+    align-items:left;
+    text-align: left; /* Align the image to the right */
+    padding: 0 20px; 
+
+    
+}
+
+.image img {
+    max-width:10%; /* Adjust the image size as needed */
+    shape-rendering: crispEdges;
+    text-align: left;
+    display: block; 
+    margin-right: auto;
+}
+/* Style the Education section */
+#education {
+    padding: 40px;
+    text-align: center;
+}
+
+#education h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.education-entry {
+    text-align: left;
+    margin: 20px;
+}
+
+.education-entry h3 {
+    font-size: 18px;
+}
+
+.education-entry p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Style the SSC and Intermediate entries */
+.education-entry:nth-child(2) {
+    background-color: #f4f4f4; /* Add background color for contrast */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for the entry */
+}
+
+.education-entry:nth-child(3) {
+    background-color: #f4f4f4; /* Add background color for contrast */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for the entry */
+}
+.education-entry:nth-child(4) {
+    background-color: #f4f4f4; /* Add background color for contrast */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for the entry */
+}
+
+
+
+
+
+
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style project cards */
+.project {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.project h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.project p {
+    font-size: 14px;
+    color: #555;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:blue;
+    color: lavenderblush;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: orange;
+}
+/* Style the Internships section */
+
+
+/* Style the Internships section */
+#internships {
+    padding: 40px;
+    text-align: center;
+}
+
+#internships h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.internship-pair {
+    display: flex; /* Create a flex container for side-by-side display */
+    justify-content: space-between; /* Space out the pairs */
+}
+
+.internship-entry {
+    text-align: left;
+    margin: 20px;
+    width: calc(50% - 20px); /* Make each entry take up 50% of the available width with spacing */
+}
+
+.internship-entry h3 {
+    font-size: 18px;
+}
+
+.internship-entry p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Style the Internships section */
+#internships {
+    padding: 40px;
+    text-align: center;
+}
+
+#internships h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.internship-entry {
+    text-align: left;
+    margin: 20px;
+}
+
+.internship-entry h3 {
+    font-size: 18px;
+}
+
+.internship-entry p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: left;
+}
+/* Style images within the Internships section */
+.internship-entry img {
+   
+    margin-right: 40px; 
+     /* Adjust the image width as needed */
+     /* Ensure the image doesn't affect the entry's layout */
+   
+    max-width: 9%; /* Make sure the image doesn't exceed its container */
+    margin: 8px 0; /* Add spacing between the text and the image */
+    text-align: right;
+    align-items: left;
+}
+
+
+
+/* Style contact links */
+.contact-links {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-links li {
+    margin: 0;
+    margin-right: 20px;
+    display: inline;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color:blue;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(183, 183, 237);
+    color: #fff;
+}
+/* Style the Skills section */
+#skills {
+    padding: 40px;
+}
+
+#skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+/* Style the Skills section */
+#skills {
+    padding: 40px;
+}
+
+#skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+#skills ul:hover{
+    color:blue;
+
+}
+
+#skills li {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+#Skills li :hover{
+    color:blue;
+
+}
+
+#skills li img {
+    width: 32px; /* Adjust the image size as needed */
+    height: 32px;
+    margin-right: 10px; /* Add some spacing between the image and skill name */
+}
+#skills li img:hover{
+    color:blue;
+}
+/* Style the Skills section */
+#skills {
+    padding: 40px;
+}
+
+#skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.skills-rating {
+    display: flex;
+    align-items: left;
+}
+
+.skills-rating i {
+    color: #FFD700; /* Adjust star color */
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.skill-label {
+    margin-left: 10px;
+    font-weight: bold;
+}
+/* Style the Certifications section */
+#certifications {
+    padding: 10px;
+}
+
+#certifications h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#certifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+#certifications li {
+    background-color: #fff;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#certifications img {
+    max-width: 4%; /* Make sure the image doesn't exceed its container */
+    margin: 8px 0;
+}
+
+#certifications h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#certifications p {
+    margin: 5px 0;
+}
+/* Style the Certifications section */
+#certifications {
+    padding: 40px;
+}
+
+#certifications h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#certifications ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Create a flex container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+#certifications li {
+    flex: 1; /* Distribute available space equally among items */
+    background-color: #fff;
+    color: #333;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px; /* Limit the maximum width of each certification card */
+}
+
+#certifications img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    margin: 10px 0;
+}
+
+#certifications h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#certifications p {
+    margin: 5px 0;
+}
+/* Style the Skills section */
+#skills {
+    padding: 40px;
+}
+
+#skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Create a flex container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    gap: 20px; /* Add some spacing between skills */
+}
+
+.skills li {
+    display: flex; /* Create a flex item */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills img {
+    max-width: 100px; /* Adjust the image size as needed */
+    max-height: 100px;
+    margin-bottom: 10px; /* Add some spacing between the image and skill name */
+}
+/* Default styles for all screen sizes */
+/* Add your default styles here */
+
+/* Media query for tablets (e.g., iPad) */
+@media (max-width: 768px) {
+    /* CSS rules for tablets */
+    /* Adjust fonts, margins, or layout for smaller screens */
+}
+
+/* Media query for mobile devices (e.g., smartphones) */
+@media (max-width: 480px) {
+    /* CSS rules for mobile devices */
+    /* Further simplify the layout, remove less important elements */
+}
+/* Media query for mobile devices (e.g., smartphones) */
+@media (max-width: 480px) {
+    /* CSS rules for mobile devices */
+    /* Simplify the layout for small screens */
+    #about h2 {
+        font-size: 20px;
+    }
+
+    .about-text {
+        margin: 10px;
+    }
+
+    /* Hide certain elements for mobile devices */
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
